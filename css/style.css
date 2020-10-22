@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 14px;
+  color: #1c3259;
+  width: 100%;
+  height: 100%;
+  font-family: 'Balsamiq Sans', cursive;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+}
+img{
+  max-width: 100%;
+}
+
+/* =================== Start Header =================== */
+
+header{
+  width: 100%;
+  height: 70px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+header nav .logo {
+  display: flex;
+  align-items: center;
+}
+header nav .logo img{
+  margin-top: -5px;
+  cursor: pointer;
+}
+header nav .logo span{
+  font-size: 1.7em;
+  margin-left: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+header nav ul{
+  display: flex;
+  flex: 1;
+  margin-left: 40px;
+  margin-top: 5px;
+}
+header nav ul li{
+  padding:  15px;
+  transition: all 0.3s ease-in-out;
+}
+header nav ul li a{
+  color: #1c3259;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+}
+header nav ul li a:hover{
+  color: #1388f2;
+}
+.header-btns .btn-1{
+  border: none;
+  background: transparent;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s ease
+}
+.header-btns .btn-1:hover{
+  background: #1388f2;
+  border-radius: 5px;
+  color: #fff;
+}
+.header-btns .btn-2{
+  background: #1388f2;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease
+}
+.header-btns .btn-2:hover{
+  background: #00488b;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* =================== Start Showcase & Form =================== */
+
+.showcase h1{
+  text-align: center;
+  margin-top: 60px;
+  font-size: 3em; 
+}
+
+.showcase p{
+  text-align: center;
+  margin-top: 20px;
+  color: #678192;
+}
+.content-showcase{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 40px;
+}
+.content-showcase .form{
+  text-align: center;
+}
+.content-showcase form input{
+  display: block;
+  width: 60%;
+  height: 40px;
+  padding: 0 10px;
+  margin: 10px auto;
+  font-family: 'Balsamiq Sans', cursive; 
+  border-radius: 5px;
+  border: 1px solid #dbdfe2;
+  position: relative;
+}
+.content-showcase form input:focus{
+  outline: none;
+  border: 1px solid #379cfa;
+}
+.content-showcase form p{
+  font-size: .9em;
+}
+.content-showcase form p a{
+  color: #1388f2;
+}
+.content-showcase form .sign-btn{
+  width: 60%;
+  margin: 10px 0;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background: #38cd23;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 11px 20px black;
+}
+.content-showcase form .sign-btn:hover{
+  background: #00488b;
+}
+.content-showcase form .git{
+  width: 60%;
+  height: 40px;
+  margin: 5px 0;
+  border: 1px solid #dbdfe2;
+  background: transparent;
+  border-radius: 5px;
+  color: #1388f2;
+  font-size: 1.1em;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.content-showcase form .git i{
+  position: absolute;
+  left: 10px;
+  font-size: 1.3em;
+  padding: 0 5px 0 0;
+}
+.content-showcase form .git:hover{
+  background: #1388f2;
+  color: #fff;
+}
+
+/* =================== Start live Coding =================== */
+
+.live-coding{
+  text-align: center;
+  margin: 100px 0;
+}
+.live-coding h1{
+  font-size: 2em;
+  position: relative;
+}
+.live-coding h1:before{
+  content: '';
+  width: 8%;
+  height: 3px;
+  background: #1388f2;
+  position: absolute;
+  bottom: -15px;
+  margin-left: 32px;
+  border-radius: 50%;
+}
+.live-coding .live-bg{
+  margin: 70px 0 100px 0;
+  box-shadow: 1px 1px 30px 20px #dbdfe2;
+}
+.live-coding .live-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  grid-gap: 50px;
+}
+.live-coding .live-content .live-img h3 {
+  margin: 20px 0;
+  box-shadow: 3px 2px 17px #91a684;
+  font-size: 1.5em;
+  border-radius: 10px;
+}
+.live-coding .live-content .live-img p{
+  color: #678192;
+}
+
+/* =================== Start Develop Production ===================  */
+
+.develop{
+  text-align: center;
+  margin: 0 0 100px 0;
+}
+.develop h1{
+  font-size: 2em;
+  position: relative;
+}
+.develop h1:before{
+  content: '';
+  width: 8%;
+  height: 3px;
+  background: #1388f2;
+  position: absolute;
+  bottom: -15px;
+  margin-left: 95px;
+  border-radius: 50%;
+}
+.develop-one{
+  margin: 100px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.develop-text-one{
+  width: 80%;
+  text-align: left;
+}
+.develop-img-one{
+  text-align: right;
+}
+.develop-text-one h2{
+  margin: 20px 0;
+}
+.develop-text-one p{
+  color: #678192;
+  line-height: 1.5;
+}
+
+.develop-two{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.develop-text-two{
+  width: 80%;
+  text-align: left;
+  margin-left: 120px;
+}
+.develop-img-two{
+  text-align: left;
+}
+.develop-text-two h2{
+  margin: 20px 0;
+}
+.develop-text-two p{
+  color: #678192;
+  line-height: 1.5;
+}
+
+/* =================== Start Technologies & Partners =================== */
+
+.tech{
+  text-align: center;
+}
+.tech h1{
+  font-size: 2em;
+  position: relative;
+}
+.tech h1:before{
+  content: '';
+  width: 8%;
+  height: 3px;
+  background: #1388f2;
+  position: absolute;
+  bottom: -15px;
+  margin-left: 110px;
+  border-radius: 50%;
+}
+.partners{
+  margin: 100px 0 0 0;
+}
+
+/* =================== Start Pricing Plans =================== */
+
+.prices .price{
+  font-size: 2em;
+  position: relative;
+  margin: 100px 0;
+}
+.prices .price:before{
+  content: '';
+  width: 8%;
+  height: 3px;
+  background: #1388f2;
+  position: absolute;
+  bottom: -15px;
+  margin-left: 7px;
+  border-radius: 50%;
+}
+.prices{
+  margin: 100px 0 0 0;
+  margin-bottom: 2rem;
+  text-align: center ;
+}
+.prices .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+}
+.prices .plan{
+  margin: 10px 10px;
+  box-shadow: 1px 1px 20px 10px #dbdfe2;
+  border-radius: 10px;
+}
+
+.prices .plan h1{
+  font-size: 1.5em;
+  margin: 50px 0;
+}
+.prices .plan span{
+  color: #1c3259;
+  font-size: 4.5em;
+  font-weight: bold;
+}
+.prices .plan .features{
+  margin-top: 40px;
+  position: relative;
+}
+.prices .plan .features li{
+  margin: 25px 0 0 45px;
+  font-weight: 600;
+}
+.prices .plan .features li:before{
+  content: '';
+  background: url(../img/17imgLi.jpg);
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 30px;
+  margin-top: -5px;
+}
+.prices .plan .plan-btn{
+  width: 80%;
+  height: 40px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  background: #1388f2;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.prices .plan .plan-btn:hover{
+  background: #00488b;
+}
+
+/* =================== Start Footer =================== */
+
+footer{
+  margin-top: 150px;
+  border-top: 1px solid #dbdfe2;
+  padding: 30px 0;
+}
+footer .footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  grid-gap: 60px;
+}
+footer .footer img{
+  width: 50px;
+}
+footer .footer a {
+  display: block;
+  color: #678192;
+  padding: 5px 0;
+}
+.social{
+  border-top: 1px solid #dbdfe2;
+  padding: 20px 0;
+}
+.social .container{
+  display: flex;
+  justify-content: space-between;
+}
+.social .lang select{
+  border: none;
+  outline: none;
+}
+.socials a{
+  font-size: 1.5em;
+  margin: 0 10px;
+  color: #1388f2;
+}
+
+
+/* =================== Start Media Query =================== */
+
+@media(max-width: 839px ){
+  header nav .logo span{
+    font-size: 1.3em;
+  }
+  header nav ul{
+    margin-left: 20px;
+  }
+  header nav ul li{
+    padding:  10px;
+  }
+  .header-btns .btn-1{
+    font-size: 0.8em;
+  }
+  .header-btns .btn-2{
+    font-size: 0.8em;
+  }
+  .showcase h1{
+    font-size: 2.5em; 
+  }
+  .showcase p{
+    font-size: 0.9em; 
+  }
+  .live-coding h1:before{
+    margin-left: 50px;
+  }
+  .develop h1:before{
+    margin-left: 115px;
+  }
+  .tech h1:before{
+    margin-left: 130px;
+  }
+  .prices .price:before{
+    margin-left: 60px;
+  }
+}
+.menu-bar{
+  position: absolute;
+  right: 15px;
+  top: 22px;
+  font-size: 2em;
+  cursor: pointer;
+  z-index: 2;
+  display: none;
+}
+
+
+@media(max-width: 722px ){
+  .menu-bar{
+    display: block;
+  }
+  header nav .logo span{
+    display: none;
+  }
+  .header-btns{
+    margin-right: 30px;
+  }
+  header nav .logo span{
+    font-size: 1.3em;
+  }
+  header nav ul.menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1388f2;
+    width: 104%;
+    height: 105%;
+    margin: 0;
+    z-index: 1;
+    padding-top: 150px;
+    transform: translateY(-1100px);
+    transition: all 0.5s ease-in-out;
+  }
+  header nav ul.menu.show{
+    transform: translateY(0px)
+  }
+  header nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 2em;
+    border-bottom: 2px solid #fff;
+  }
+  header nav ul li:hover{
+    border-radius: 50%;
+  }
+  header nav ul li a:hover{
+    color: #fff;
+  }
+  .showcase h1{
+    font-size: 2.5em; 
+  }
+  .showcase p{
+    font-size: 0.9em; 
+  }
+  .live-coding h1:before{
+    margin-left: 55px;
+  }
+  .develop h1:before{
+    margin-left: 120px;
+  }
+  .tech h1:before{
+    margin-left: 135px;
+  }
+  .showcase h1{
+    font-size: 1.5em; 
+  }
+  .showcase p{
+    font-size: 0.7em; 
+  }
+  .content-showcase{
+    grid-template-columns: 1fr;
+  }
+  .develop-one{
+    grid-template-columns: 1fr;
+  }
+  .develop-text-one{
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 50px; 
+  }
+  .develop-img-two{
+    border-top: 1px solid #dbdfe2;
+  }
+  .develop-img-one img{
+    margin-bottom: 30px;
+  }
+  .develop-img-two img{
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+  .develop-two{
+    grid-template-columns: 1fr;
+  }
+  .develop-text-two{
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  footer .footer{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.box{
+  box-shadow: 3px 2px 17px #91a684;
+  border-radius: 10px;
+}
+
